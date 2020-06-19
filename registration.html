@@ -24,29 +24,46 @@
     </nav>
 </header>
 <div id="wrapper">
-<Section>
-    <form>
-        <h3 class="form"> SCHOLARSHIP FORM</h3>
-    <P>Full Name(Required)</P>
-    <input>
-    <p>Email(Required)</p>
-    <input>
-    <P>Home Adress(Required)</P>
-    <input>
-    <P>Phone Number(Required)</P>
-    <input>
-    <P>Select Gender(Required)</P>
-    <input>
-    <P>Select Country(Required)</P>
-    <input>
-    <P>Educational Level(Required)</P>
-    <input>
+<Section >
+    <form action="/action_page.php" method="post" style="background-color: gray;">
+        <fieldset>
+            <legend> SCHOLARSHIP FORM </legend>
 
-    <p> Reason for Scholarship(Required)</p>
-    <textarea></textarea>
-    <p>* Required fields must be filled </p>
-    <input class="contact-submit" type="submit" value="send"
+  <label for="fullname">Full name:</label>
+  <input type="text" id="fullname" name="fullname"><br>
 
+  <label for="mail">Email:</label>
+  <input type="email" id="mail" name="mail"><br>
+    
+  <label for="Adress">Home Adress:</label>
+  <input type="text" id="adress" name="adress"><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone"><br>
+<fieldset>
+    <legend>Gender</legend>
+  <label for="male">Male</label>
+  <input type="checkbox" id="male" name="gender" value="male"><br>
+  <label for="female">Female</label>
+  <input type="checkbox" id="female" name="gender" value="female"><br>
+  <label for="other">Other</label>
+  <input type="checkbox" id="other" name="gender" value="other"><br>
+</fieldset>
+
+  <label for=" Education"> Education Level</label>
+  <select id="Education " name="Education">
+  <option value="select">...select one....</option>
+  <option value="primary school">Primary School</option>
+  <option value="Secondary School">Secondary School</option>
+  <option value="Bachelor Degree">Bachelor Degree</option>
+  <option value="Master Degree">Master Degree</option>
+  <option value="others">Others</option>
+</select><br>
+
+    <label>Reason for Scholarship(Required)</label>
+    <textarea name="message" rows="10" cols="30" Required> </textarea><br>
+
+    <input class="contact-submit" type="submit" value="submit">
+        </fieldset>
     </form>
 </Section>
 

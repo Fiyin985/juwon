@@ -25,29 +25,35 @@
 </header>
 <div id="wrapper">
 <Section >
+    <div class="form">
     <form action="/action_page.php" method="post" style="background-color: gray;">
         <fieldset>
             <legend> SCHOLARSHIP FORM </legend>
-
+<div class=" form input">
   <label for="fullname">Full name:</label>
   <input type="text" id="fullname" name="fullname"><br>
-
+</div>
+<div class=" form input">
   <label for="mail">Email:</label>
   <input type="email" id="mail" name="mail"><br>
-    
+</div>
+  <div class=" form input">
   <label for="Adress">Home Adress:</label>
   <input type="text" id="adress" name="adress"><br>
+</div>
+  <div class=" form input">
   <label for="phone">Phone Number:</label>
   <input type="tel" id="phone" name="phone"><br>
+</div>
 <fieldset>
     <legend>Gender</legend>
   <label for="male">Male</label>
-  <input type="checkbox" id="male" name="gender" value="male"><br>
+  <input type="radio" id="male" name="gender" value="male"><br>
   <label for="female">Female</label>
-  <input type="checkbox" id="female" name="gender" value="female"><br>
-  <label for="other">Other</label>
-  <input type="checkbox" id="other" name="gender" value="other"><br>
-</fieldset>
+  <input type="radio" id="female" name="gender" value="female"><br>
+  <label for="other">Others</label>
+  <input type="radio" id="other" name="gender" value="others"><br>
+</fieldset><br>
 
   <label for=" Education"> Education Level</label>
   <select id="Education " name="Education">
@@ -61,10 +67,12 @@
 
     <label>Reason for Scholarship(Required)</label>
     <textarea name="message" rows="10" cols="30" Required> </textarea><br>
-
-    <input class="contact-submit" type="submit" value="submit">
+<div>
+    <input class="button" type="submit" value="submit">
+</div>
         </fieldset>
     </form>
+</div>
 </Section>
 
 <footer>

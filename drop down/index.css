@@ -29,6 +29,7 @@ body{
     width: 120px;
     margin: 15px;
     padding: 15px;
+    border-radius: 3px;
 }
 
 .menu-bar ul li a {
